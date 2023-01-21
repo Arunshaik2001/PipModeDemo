@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PipModeDemo</string>
+
+    <!-- Stopwatch -->
+    <eat-comment />
+    <string name="clear">Clear</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="enter_picture_in_picture">Enter Picture-in-Picture mode</string>
+    <string name="explanation_main"><![CDATA[
+    This sample shows a stopwatch. Click on the button above to turn the screen into the
+    picture-in-picture mode. The stopwatch keeps on working seamlessly between mode changes.
+    The stopwatch controls are available in the picture-in-picture mode through the overlay actions.
+    ]]></string>
+    <string name="switch_media_session">Switch to using MediaSession</string>
+
+    <!-- Movie -->
+    <eat-comment />
+    <string name="play">Play</string>
+    <string name="fast_forward">Fast forward</string>
+    <string name="fast_rewind">Fast rewind</string>
+    <string name="minimize">Minimize</string>
+    <string name="switch_custom">Switch to custom actions example</string>
+    <string name="title_bigbuckbunny">Big Buck Bunny</string>
+</resources>

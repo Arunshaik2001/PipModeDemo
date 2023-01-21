@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/timer_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageButton
+        android:id="@+id/start_or_pause"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/spacing_medium"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_play_arrow_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/timer_background"
+        app:layout_constraintEnd_toEndOf="@id/timer_background"
+        app:layout_constraintTop_toTopOf="@id/timer_background"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/spacing_medium"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/timer_background"
+        app:layout_constraintEnd_toStartOf="@id/start_or_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/timer_background"
+        tools:text="00:00:00:00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
